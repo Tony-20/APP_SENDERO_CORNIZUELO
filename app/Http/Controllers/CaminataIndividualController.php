@@ -15,7 +15,6 @@ class CaminataIndividualController extends Controller
     public function store(Request $request) 
     {
         $resind = new CaminataIndividual();
-        $resind->Id = $request->get('Id');
         $resind->Nombre = $request->get('Nombre');
         $resind->DNI = $request->get('DNI');
         $resind->Ape1 = $request->get('Ape1');

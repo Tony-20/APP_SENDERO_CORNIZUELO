@@ -15,7 +15,6 @@ class VoluntariadoGrupalController extends Controller
     public function store(Request $request)
     {
         $volgrup = new VoluntariadoGrupal();
-        $volgrup->Id = $request->get('Id');
         $volgrup->Nombre = $request->get('Nombre');
         $volgrup->DNI = $request->get('DNI');
         $volgrup->Ape1 = $request->get('Ape1');

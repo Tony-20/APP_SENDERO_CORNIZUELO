@@ -15,7 +15,6 @@ class CaminataGrupalController extends Controller
     public function store(Request $request)
     {
         $resgrup = new CaminataGrupal();
-        $resgrup->Id = $request->get('Id');
         $resgrup->Nombre = $request->get('Nombre');
         $resgrup->DNI = $request->get('DNI');
         $resgrup->Ape1 = $request->get('Ape1');

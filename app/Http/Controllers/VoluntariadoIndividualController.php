@@ -15,7 +15,6 @@ class VoluntariadoIndividualController extends Controller
     public function store(Request $request)
     {
         $volind = new VoluntariadoIndividual();
-        $volind->Id = $request->get('Id');
         $volind->Nombre = $request->get('Nombre');
         $volind->DNI = $request->get('DNI');
         $volind->Ape1 = $request->get('Ape1');

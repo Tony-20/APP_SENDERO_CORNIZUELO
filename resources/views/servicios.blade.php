@@ -110,7 +110,7 @@
         <hr style="background-color: white;">
                 <br>
         <ul class="col-md-12">
-                    <li class="text-danger text-center"> <a href="{{ url('formResInd') }}" class="text-danger"> Formulario Individual</a></li>
+                    <li class="text-danger text-center"> <a href="{{ url('formresind') }}" class="text-danger"> Formulario Individual</a></li>
                 </ul>
       </div> 
       
@@ -124,7 +124,7 @@
         <hr style="background-color: white;">
                 <br>
       <ul class="col-md-12">
-                    <li class="text-danger text-center"> <a href="{{ url('formResGrup') }}" class="text-danger"> Formulario Grupal</a></li>
+                    <li class="text-danger text-center"> <a href="{{ url('formresgrup') }}" class="text-danger"> Formulario Grupal</a></li>
                 </ul>
       </div>
       
@@ -150,7 +150,7 @@
         <hr style="background-color: white;">
                 <br>
      <ul class="col-md-12">
-                    <li class="text-danger text-center"> <a href="{{ url('formVolInd') }}" class="text-danger"> Formulario Individual</a></li>
+                    <li class="text-danger text-center"> <a href="{{ url('formvolind') }}" class="text-danger"> Formulario Individual</a></li>
                 </ul>
       </div> 
       
@@ -164,7 +164,7 @@
         <hr style="background-color: white;">
                 <br>
       <ul class="col-md-12">
-                    <li class="text-danger text-center"> <a href="{{ url('formVolGrup') }}" class="text-danger"> Formulario Grupal</a></li>
+                    <li class="text-danger text-center"> <a href="{{ url('formvolgrup') }}" class="text-danger"> Formulario Grupal</a></li>
                 </ul>
       </div>
       
