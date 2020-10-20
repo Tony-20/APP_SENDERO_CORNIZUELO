@@ -64,7 +64,7 @@
           <form action="{{action('CaminataGrupalController@destroy', $vol->id)}}" method="post">
             @csrf
             <input name="_method" type="hidden" value="DELETE">
-            <button class="btn btn-danger" type="submit">Delete</button>
+            <button class="btn btn-danger" onclick="return confirm('¿Esta seguro que desea eliminarlo?')" type="submit">Delete</button>
           </form>
         </td>
       </tr>

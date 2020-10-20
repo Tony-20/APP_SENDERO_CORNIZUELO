@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\CaminataIndividual;
+use DB;
 
 class CaminataIndividualController extends Controller
 {
@@ -66,8 +67,7 @@ class CaminataIndividualController extends Controller
 
     public function destroy($id)
     {
-        $resind = CaminataIndividual::find($id);
-        $resind->delete();
-        return redirect('/formresind/')->with('success','voluntariado has been  deleted');
+        DB::table('individual_walks')->where('id', $id)->delete();
+        return redirect('/formresind/')->with('success','Registro eliminado exitosamente');
     }
 }

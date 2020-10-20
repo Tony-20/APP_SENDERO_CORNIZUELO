@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\VoluntariadoGrupal;
+use DB;
 
 class VoluntariadoGrupalController extends Controller
 {
@@ -66,8 +67,7 @@ class VoluntariadoGrupalController extends Controller
 
     public function destroy($id)
     {
-        $volgrup = VoluntariadoGrupal::find($id);
-        $volgrup->delete();
-        return redirect('/formvolgrup/')->with('success','voluntariado has been  deleted');
+        DB::table('group_volunteers')->where('id', $id)->delete();
+        return redirect('/formvolgrup/')->with('success','Registro eliminado exitosamente');
     }
 }

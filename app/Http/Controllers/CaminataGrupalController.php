@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\CaminataGrupal;
+use DB;
 
 class CaminataGrupalController extends Controller
 {
@@ -29,7 +30,7 @@ class CaminataGrupalController extends Controller
         $resgrup->Telefono = $request->get('Telefono');
         $resgrup->Detalle = $request->get('Detalle');
         $resgrup->save();
-        return redirect('/formresgrup/')->with('success', 'voluntariado has been successfully added');
+        return redirect('/formresgrup/')->with('success', 'Registro agregado exitosamente');
     }
 
     public function index()
@@ -61,13 +62,12 @@ class CaminataGrupalController extends Controller
         $resgrup->Telefono = $request->get('Telefono');
         $resgrup->Detalle = $request->get('Detalle');   
         $resgrup->save();
-        return redirect('/formresgrup/')->with('success', 'voluntariado has been successfully update');
+        return redirect('/formresgrup/')->with('success', 'Registro actualizado exitosamente');
     }
 
     public function destroy($id)
     {
-        $resgrup = CaminataGrupal::find($id);
-        $resgrup->delete();
-        return redirect('/formresgrup/')->with('success','voluntariado has been  deleted');
+        DB::table('group_walks')->where('id', $id)->delete();
+        return redirect('/formresgrup/')->with('success','Registro eliminado exitosamente');
     }
 }

@@ -38,7 +38,7 @@ Route::get('/formResInd', function () {
     return view('formResInd');
 });
 
-Route::get('/formResGrup', function () {
+Route::get('/formResGrup', function () { 
     return view('formResGrup');
 }); */
 
