@@ -41,7 +41,7 @@
           <a class="nav-link text-white" href="{{ url('/') }}">Inicio <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link text-white" href="{{ url('servicios') }}">Servicios</a>
+          <a class="nav-link text-white" href="{{ url('/servicios') }}">Servicios</a>
         </li>
         
         <li class="nav-item dropdown active">

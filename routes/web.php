@@ -25,6 +25,10 @@ Route::get('/servicios', function () {
     return view('servicios');
 });
 
+Route::get('flora', function () {
+    return view('flora');
+});
+
 /*
 Route::get('/formVolInd', function () {
     return view('formVolInd');

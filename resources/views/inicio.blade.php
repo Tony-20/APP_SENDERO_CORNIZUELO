@@ -131,7 +131,7 @@
     <div class="card" style="background-color: rgb(7, 8, 88)">
       <img src="https://fhernanb.github.io/libro_mod_pred/images/arbol.jpg" style="height: 330px;"   class="card-img-top" alt="árbol">
       <div class="card-body">
-        <h2 class="card-title text-white text-center" style="font-weight: bold;">Flora</h2>
+        <h2 class="card-title text-white text-center" style="font-weight: bold;"><a href="{{ url('flora') }}">Flora</a></h2>
         <p class="card-text text-white">En el apartado de flora podra ver las imágenes e Información acerca de la vegetación que se encuentra en el Sendero el Cornizuelo.</p>
       </div> 
     </div>
