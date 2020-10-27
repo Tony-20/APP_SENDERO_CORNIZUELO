@@ -188,6 +188,19 @@
                 <ul class="col-md-12">
                     <li class="text-white">Telefono: +506 2562 6212</li>
                     <li class="text-white">Correo Electrónico: cemede@una.cr</li>
+                     <div class="container-fluid bg-main">
+                    <div class="row text-center p-4"> 
+                    <div class="col-md-12"><a href="https://www.facebook.com/unacemede/"> 
+                    <img src="{{asset('images/facebook.png')}}" class="img-fluid" width="35px" alt="facebook unacemede">
+                    </a>
+                    <a href="https://www.instagram.com/unacemede/">
+                    <img src="{{asset('images/instagram.png')}}" class="img-fluid" width="35px" alt="instagram unacemede">
+                    </a> 
+                    <a href="https://www.youtube.com/channel/UCEm2F4ZxRBORG3IztQAqnyQ"> 
+                    <img src="{{asset('images/youtube.png')}}" class="img-fluid" width="35px" alt="youtube unacemede"> 
+                    </a>
+                    </div>
+                    </div>
                 </ul> 
                 <br>
             </div>
